@@ -1,0 +1,314 @@
+ /* Body styles */
+body {
+    background-color: #f8f9fa; /* Light gray background color */
+    color: #343a40; /* Dark font color */
+    font-family: Arial, sans-serif; /* Sans-serif font */
+}
+
+/* Style for the navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #ffffff; /* Text color */
+    background-color: #004f98;
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Style for the logo */
+.logo img {
+    max-width: 150px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Style for the navigation links */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 50px; /* Adjust margin to add space between links */
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold; /* Make the font bold */
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #111; /* Change color on hover */
+}
+
+/* Style for the active link */
+.nav-links a.active {
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007bff; /* Blue border color on focus */
+}
+
+button {
+    background-color: #007bff; /* Blue background for the button */
+    color: #ffffff; /* White font color */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: none; /* Darker blue on hover */
+}
+
+/* Carousel */
+
+
+.carousel {
+    width: 80%; /* Adjust the width as needed */
+    margin: auto; /* Center the carousel horizontally */
+    height: auto;
+}
+
+.carousel-item img {
+    max-width: 100%; /* Ensure the image fills the carousel width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.carousel-caption h2,
+.carousel-caption h3 {
+    color: white !important; /* Set font color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow effect */
+}
+
+.carousel-caption h2 {
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+}
+
+.carousel-caption h3 {
+    font-size: 18px; /* Set font size */
+}
+
+/* About */
+.plastic-tumbler-container {
+    display: flex;
+    align-items: center;
+    background-color: #004f98;
+    color: #ffffff; /* Set font color to white */
+    text-align: center;
+    padding: 30px;
+}
+
+.plastic-tumbler-1 {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.plastic-tumbler img {
+    max-width: 100%;
+}
+
+.plastic-tumbler {
+    flex: 1;
+    padding: 20px;
+}
+
+.see-more-btn {
+    background-color: #ffffff; /* White background */
+    color: #004f98; /* Dark blue font color */
+    border: 2px solid #ffffff; /* White border */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.see-more-btn:hover {
+    background-color: #004f98; /* Dark blue background */
+    color: #ffffff; /* White font color */
+}
+
+/* Featured Products */
+.featured-content {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    color: #004f98;
+}
+
+.featured-content h1 {
+    font-weight: 800;
+}
+
+.featured-content h2 {
+    font-weight: 600;
+}
+
+.product-container {
+    margin-top: 20px;
+}
+
+.product {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
+    position: relative; /* Position for the button */
+}
+
+.product img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.product p {
+    margin-top: 5px;
+}
+
+/* Buy now button */
+.buy-now-button {
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #004f98; /* Dark blue background */
+    color: #ffffff; /* White font color */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: #003366; /* Darker blue on hover */
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale up the product container on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+/* Footer */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer {
+    background-color: #004f98; /* Set background color to #004f98 */
+    color: white; /* Set font color to white */
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+/* Update hover effect color for social media icons */
+.socialIcons a:hover {
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a {
+    color: white; /* Set font color to white */
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover {
+    opacity: 1;
+    color: #111; /* Set hover effect color to white */
+}
+.footerBttom {
+    background-color: #004f98;
+    padding: 20px;
+    text-align: center;
+}
+.footerBttom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul {
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
